@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CesiApp</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-list-header>
+          Messages  
+        </ion-list-header> 
+        <ion-item *ngFor="let item of messages">
+            <p><strong>{{item.username}}</strong> {{item.date | date: 'HH:mm dd/MM/yyyy'}} <br /> <br /> {{item.message}}</p>
+        </ion-item>
+      </ion-list>  
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <input type="text" [(ngModel)]="message" placeholder="Your message"/>    
+        <ion-button (click)="postMessage()">Send</ion-button>    
+      </ion-toolbar>
+  </ion-footer>

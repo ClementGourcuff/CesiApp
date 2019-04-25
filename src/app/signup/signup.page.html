@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title text-center>CesiApp</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <ion-item text-center>
+        <ion-input [(ngModel)]="username" type="text" placeholder="Username"></ion-input>
+      </ion-item>
+    
+      <ion-item text-center>
+        <ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-item text-center>
+          <ion-input [(ngModel)]="urlPhoto" type="text" placeholder="AvatarUrl"></ion-input>
+      </ion-item>
+      
+      <div text-center>
+        <ion-button (click)="register()">Register</ion-button>
+      </div>
+
+    </ion-list>
+  </ion-content>
+  

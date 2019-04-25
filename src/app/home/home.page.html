@@ -1,14 +1,25 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title text-center>CesiApp</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+	<ion-list>
+		<ion-item text-center>
+			<ion-input [(ngModel)]="username" type="text" placeholder="Username"></ion-input>
+		</ion-item>
+	
+		<ion-item text-center>
+			<ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input>
+		</ion-item>
+		
+		<div text-center>
+			<ion-button (click)="login()">Sign-in</ion-button>
+		</div>
+
+		<div text-center>
+			<ion-button routerLink="/signup">Register</ion-button>
+		</div>
+	</ion-list>
 </ion-content>

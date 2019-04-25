@@ -5,18 +5,24 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { LoginService } from './login.service';
+import { HttpModule } from '@angular/Http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    HttpModule,
     RouterModule.forChild([
       {
         path: '',
         component: HomePage
       }
     ])
+  ],
+  providers: [
+    LoginService
   ],
   declarations: [HomePage]
 })

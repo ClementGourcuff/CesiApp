@@ -1,5 +1,7 @@
 {
   "name": "CesiApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
