@@ -1,20 +1,18 @@
 <ion-header>
     <ion-toolbar>
-      <ion-title>CesiApp</ion-title>
-      <ion-buttons slot="start">
-        <ion-menu-button autoHide="false"></ion-menu-button>
-      </ion-buttons>
+		<ion-title>CesiApp</ion-title>
+		<ion-buttons slot="start">
+			<ion-menu-button autoHide="false"></ion-menu-button>
+		</ion-buttons>
     </ion-toolbar>
-  </ion-header>
+</ion-header>
   
-  <ion-content padding>
-      <ion-list>
-          <ion-list-header>
-            Users  
-          </ion-list-header> 
-          <ion-item *ngFor="let user of users">
-              <p><strong>{{user.username}}</strong> {{user.pwd}}</p>
-          </ion-item>
-        </ion-list>  
-  </ion-content>
+<ion-content padding>
+	<ion-list>
+		<ion-list-header>Users</ion-list-header> 
+		<ion-item *ngFor="let user of users">
+			<p><strong>{{user.username}}</strong> {{user.pwd}}</p>
+		</ion-item>
+	</ion-list>  
+</ion-content>
   

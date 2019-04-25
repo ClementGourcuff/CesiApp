@@ -3,13 +3,13 @@ import { Http, Headers, Response } from '@angular/Http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 export class UsersService {
 
-  constructor(public http: Http) { }
+	constructor(public http: Http) { }
 
-  public getUsers(): Observable<Response> {
+	public getUsers(): Observable<Response> {
 		const headers = new Headers();
 		headers.append('Content-Type', 'application/x-www-form-urlencoded');
 		headers.append('token', localStorage.getItem("token"));

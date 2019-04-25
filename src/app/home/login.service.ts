@@ -11,7 +11,6 @@ export class LoginService {
 
 	public doLogin(username: string, password: string): Observable<Response> {
 		let params = 'username=' + username + '&pwd=' + password;
-
 		const headers = new Headers();
 		headers.append('Content-Type', 'application/x-www-form-urlencoded');
 		return this.http.post('http://cesi.cleverapps.io/signin', params, {headers: headers});

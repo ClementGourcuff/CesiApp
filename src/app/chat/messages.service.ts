@@ -3,11 +3,11 @@ import { Http, Headers, Response } from '@angular/Http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root'
 })
 export class MessagesService {
 
-  constructor(public http: Http) { }
+	constructor(public http: Http) { }
 
 	public getMessages(): Observable<Response> {
 		const headers = new Headers();
